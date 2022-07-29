@@ -1,0 +1,43 @@
+<html>
+
+<title>Ticket booking</title>
+<script>
+	 var no_of_tic;
+	 const tic_cos=150;
+	 var total_cos=0;
+	 
+	 no_of_tic = parseInt(window.prompt("Enter no of tickets","0"));
+	 if(no_of_tic >= 6 || no_of_tic <= 0){
+		alert("No of Tickets must be Greater than 0 and less than 6");
+		document.write("<h2  style='color:red;border: 2px solid black'>");
+		document.write("failed tickets are not booked </h2>");
+		
+		}
+	else {
+		if(no_of_tic >= 1 && no_of_tic <= 2){
+			total_cos= tic_cos*no_of_tic;
+			document.write("<h2 style='color:black;border: 2px solid green'>");
+			document.write("Tickets are booked sucessfuly <br>");
+			document.write("<h2  style='color:white;background-color:MediumSeaGreen;'>");
+			document.write("Total cost of the tickets is "+total_cos);
+			document.write("</h2>");
+			}
+		else if(no_of_tic = 3 || 4 || 5){
+				total_cos=tic_cos*no_of_tic*0.9;
+				document.write("<h2 style='color:black;border: 2px solid green'>");
+				document.write("Tickets are booked sucessfuly <br>");
+				document.write("<h2  style='color:white;background-color:MediumSeaGreen;'>");
+				document.write("Total cost of the tickets is reduced due to festival with a discount of 10%  is "+total_cos);
+				}
+		
+			
+		}
+	 
+</script>
+</head>
+<body style="background-color:rgba(255, 99, 71, 0.5);">
+  
+</body>
+
+
+</html>
