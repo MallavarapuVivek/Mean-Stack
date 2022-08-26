@@ -1,0 +1,52 @@
+<html>
+<head>
+<h1 id="mst1"></h1>
+<h1 id="mst2"></h1>
+<h1 id="mst3"></h1>
+<h1 id="mst4"></h1>
+<h1 id="mst5"></h1>
+<script>
+let timeout;
+var d=new Date();
+
+
+function F1(){
+		document.getElementById("mst1").innerHTML="Hey! this is F1 ";
+}
+function F2(){
+		document.getElementById("mst2").innerHTML="Hey! this is F2 ";
+}
+function F3(){
+		document.getElementById("mst3").innerHTML="Thnx for visiting our page";
+}
+function F4(x,y){
+		document.getElementById("mst4").innerHTML=x+y;
+}function F5(){
+		document.getElementById("mst5").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+}
+
+document.writeln("<h2>Basic function calls</h2>");
+F1();
+setTimeout(F1,1000);
+
+document.writeln("<h2>The setTimeout() Method</h2>");
+F2();
+setTimeout(F2,3000);
+
+document.writeln("<h2>The setTimeout() Method with calling using element id</h2>");
+F3();
+setTimeout(F3,3000);
+
+document.writeln("<h2>The setTimeout() Method with parameter calling</h2>");
+F4();
+setTimeout(F4,4000,5,6);
+
+document.writeln("<h2>The setTimeout() Method with parameter calling</h2>");
+F5();
+setTimeout(F5,5000);
+
+</script>
+</head>
+<body>
+</body>
+</html>
